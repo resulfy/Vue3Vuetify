@@ -1,0 +1,35 @@
+.v-main {
+    height: 100vh !important;
+}
+
+.v-navigation-drawer--rail .v-list-item .v-avatar {
+  margin-left: 8px;
+}
+
+.v-navigation-drawer .v-list-item .v-avatar{
+  margin-right: 8px;
+}
+
+.v-navigation-drawer--rail:hover{
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+}
+
+.v-navigation-drawer--rail .hover-btn {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.v-navigation-drawer--rail:hover .hover-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.v-navigation-drawer:not(.v-navigation-drawer--rail) .hover-btn {
+  opacity: 0;
+  pointer-events: none;
+}
