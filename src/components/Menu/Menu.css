@@ -2,13 +2,29 @@
     height: 100vh !important;
 }
 
-.v-navigation-drawer--rail .v-list-item .v-avatar {
-  margin-left: 8px;
+.narbulut-title{
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.v-navigation-drawer .v-list-item .v-avatar{
-  margin-right: 8px;
+.v-navigation-drawer--rail .v-list-item__prepend .v-icon.mdi-cloud {
+  margin-left: 8px;
+  color: #1056c7;
 }
+
+.v-navigation-drawer .v-list-item__prepend .v-icon.mdi-cloud {
+  margin-left: 8px;
+  color: #1056c7;
+}
+
+.v-icon.mdi-cloud {
+  transition: font-size 0.3s ease-in-out; /* Adds smooth transition */
+}
+
+.icon-big {
+  font-size: 36px !important; /* Increase the size of the icon when drawer is open */
+}
+
 
 .v-navigation-drawer--rail:hover{
   background-color: #f0f0f0;

@@ -1,26 +1,17 @@
 <template>
   <v-card>
     <v-layout>
-      <v-navigation-drawer
-        v-model="drawer"
-        elevation="5"
-        :rail="rail"
-        permanent
-        @click="rail = false"
-        @mouseenter="showHoverBtn = true"
-        @mouseleave="showHoverBtn = false"
-      >
-        <v-list-item
-          prepend-avatar="https://randomuser.me/api/portraits/men/85.jpg"
-          title="John Leider"
-          nav
-        >
+      <v-navigation-drawer v-model="drawer" elevation="5" :rail="rail" permanent @click="rail = false"
+        @mouseenter="showHoverBtn = true" @mouseleave="showHoverBtn = false">
+        <v-list-item prepend-icon="mdi-cloud" title="Narbulut" nav class="narbulut-title">
+          <template v-slot:title>
+            <span class="narbulut-title">Narbulut</span>
+          </template>
+          <template v-slot:prepend>
+            <v-icon :class="{ 'mdi-cloud': true, 'icon-big': drawer && !rail }"></v-icon>
+          </template>
           <template v-slot:append>
-            <v-btn
-              icon="mdi-chevron-left"
-              variant="text"
-              @click.stop="rail = !rail"
-            ></v-btn>
+            <v-btn icon="mdi-chevron-left" variant="text" @click.stop="rail = !rail"></v-btn>
           </template>
 
         </v-list-item>
@@ -32,14 +23,8 @@
           <v-list-item prepend-icon="mdi-account" title="My Account" value="account"></v-list-item>
           <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"></v-list-item>
         </v-list>
-        <v-list-item
-        class="hover-btn"
-        >
-          <v-btn
-            icon="mdi-chevron-right"
-            variant="text"
-            v-if="showHoverBtn"
-        ></v-btn>
+        <v-list-item class="hover-btn">
+          <v-btn icon="mdi-chevron-right" variant="text" v-if="showHoverBtn"></v-btn>
         </v-list-item>
       </v-navigation-drawer>
       <v-main style="height: 250px"></v-main>
