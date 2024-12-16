@@ -19,7 +19,6 @@
       <v-menu
             offset-y
             close-on-content-click
-            activator="parent"
           >
 
             <template #activator="{ props }">
