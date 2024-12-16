@@ -3,8 +3,17 @@
 }
 
 .narbulut-title{
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.v-navigation-drawer .v-list-item .v-list-item-title {
   font-size: 14px;
+  font-weight: 500; 
+}
+
+.v-navigation-drawer .v-list-item .v-icon {
+  font-size: 25px;
 }
 
 .v-navigation-drawer--rail .v-list-item__prepend .v-icon.mdi-cloud {

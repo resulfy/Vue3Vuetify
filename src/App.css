@@ -3,11 +3,12 @@
     height: 100vh;
     overflow: hidden;
 } 
-  
+
 .main-content {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin: 10px;
+    margin: 1px;
     height: auto;
+    margin-top: 5px;
 }

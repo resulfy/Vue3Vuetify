@@ -1,18 +1,58 @@
 .app-bar {
+    height: 60px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 80px;
-    padding: 10px;
+    justify-content: space-between; 
+    padding: 0 16px;
   }
-  
+
   .search-bar {
-    max-width: 300px;
+    max-width: auto;
+    flex: 1;
+    margin-bottom: 8px;
+  }
+
+  .search-bar .v-input {
+    border: none;
+    box-shadow: none;
   }
   
+  .bar-buttons{
+    padding-right: 10px;
+  }
+
   .ml-3 {
     margin-left: 12px;
   }
   
+  .v-btn {
+    color: white;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .v-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .v-avatar img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+  }
+
+  .v-list-item .v-list-item-title {
+    font-size: 14px; 
+    font-weight: 400;
+  }
+  
+  
+  .v-list-item .v-icon {
+    font-size: 25px; 
+  }
+  
+.v-list-item__spacer {
+    width: 15px !important;
+  }

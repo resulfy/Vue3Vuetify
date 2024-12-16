@@ -8,8 +8,6 @@
           <AppBar />
         </div>
         <div class="content">
-          <h1>Welcome to Narbulut</h1>
-          <p>Bu alana içerik eklenebilir.</p>
         </div>
       </div>
     </div>
