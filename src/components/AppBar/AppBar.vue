@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <div class="app-bar-container">
       <v-app-bar elevation="5" class="app-bar">
       <v-text-field
         prepend-inner-icon="mdi-magnify"
@@ -39,7 +38,6 @@
           </v-menu>
       </div>
     </v-app-bar>
-    </div>
   </v-app>
 </template>
 

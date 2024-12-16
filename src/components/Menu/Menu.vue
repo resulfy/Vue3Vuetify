@@ -1,6 +1,5 @@
 <template>
   <v-card>
-    <v-layout>
       <v-navigation-drawer v-model="drawer" elevation="5" :rail="rail" permanent @click="rail = false"
         @mouseenter="showHoverBtn = true" @mouseleave="showHoverBtn = false">
         <v-list-item prepend-icon="mdi-cloud" title="Narbulut" nav class="narbulut-title">
@@ -27,8 +26,6 @@
           <v-btn icon="mdi-chevron-right" variant="text" v-if="showHoverBtn"></v-btn>
         </v-list-item>
       </v-navigation-drawer>
-      <v-main style="height: 250px"></v-main>
-    </v-layout>
   </v-card>
 </template>
 
