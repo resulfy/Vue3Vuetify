@@ -1,2 +1,13 @@
-
+.layout-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+} 
   
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+    height: auto;
+}
