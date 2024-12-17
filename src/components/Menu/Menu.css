@@ -34,12 +34,13 @@
   font-size: 36px !important;
 }
 
-.v-btn{
-  color: black;
-}
-
 .v-navigation-drawer--rail:hover{
   background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+}
+
+.v-theme--dark .v-navigation-drawer--rail:hover{
+  background-color: #464545;
   transition: background-color 0.5s ease;
 }
 
@@ -55,7 +56,7 @@
 .v-navigation-drawer--rail:hover .hover-btn {
   opacity: 1;
   pointer-events: auto;
-  color: black;
+  color: black !important;
 }
 
 .v-navigation-drawer:not(.v-navigation-drawer--rail) .hover-btn {

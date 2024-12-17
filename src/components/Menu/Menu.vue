@@ -10,7 +10,7 @@
             <v-icon :class="{ 'mdi-cloud': true, 'icon-big': drawer && !rail }"></v-icon>
           </template>
           <template v-slot:append>
-            <v-btn icon="mdi-chevron-left" variant="text" @click.stop="rail = !rail"></v-btn>
+            <v-btn :color="chevronColor" class="left-icon" icon="mdi-chevron-left" variant="text" @click.stop="rail = !rail"></v-btn>
           </template>
 
         </v-list-item>
@@ -23,13 +23,15 @@
           <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"></v-list-item>
         </v-list>
         <v-list-item class="hover-btn">
-          <v-btn icon="mdi-chevron-right" variant="text" v-if="showHoverBtn"></v-btn>
+          <v-btn :color="reverseColor" icon="mdi-chevron-right" variant="text" v-if="showHoverBtn"></v-btn>
         </v-list-item>
       </v-navigation-drawer>
   </v-card>
 </template>
 
 <script>
+import { computed } from 'vue';
+
 export default {
   data() {
     return {
@@ -38,6 +40,14 @@ export default {
       showHoverBtn: false,
     };
   },
+  computed: {
+    chevronColor(){
+      return this.$vuetify.theme.global.name === "dark" ? "white" : "black";
+    },
+    reverseColor(){
+      return this.$vuetify.theme.global.name === "white" ? "dark" : "black";
+    },
+  }
 };
 </script>
 
