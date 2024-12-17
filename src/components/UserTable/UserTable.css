@@ -5,3 +5,7 @@
 .v-icon {
     cursor: pointer;
   }
+
+.v-card{
+    align-items: center;
+}
