@@ -27,13 +27,16 @@
 }
 
 .v-icon.mdi-cloud {
-  transition: font-size 0.3s ease-in-out; /* Adds smooth transition */
+  transition: font-size 0.3s ease-in-out;
 }
 
 .icon-big {
-  font-size: 36px !important; /* Increase the size of the icon when drawer is open */
+  font-size: 36px !important;
 }
 
+.v-btn{
+  color: black;
+}
 
 .v-navigation-drawer--rail:hover{
   background-color: #f0f0f0;
@@ -52,6 +55,7 @@
 .v-navigation-drawer--rail:hover .hover-btn {
   opacity: 1;
   pointer-events: auto;
+  color: black;
 }
 
 .v-navigation-drawer:not(.v-navigation-drawer--rail) .hover-btn {

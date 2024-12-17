@@ -13,7 +13,7 @@
       <v-spacer></v-spacer>
       <div class="bar-buttons">
         <v-btn icon @click="toggleTheme">
-        <v-icon>{{ isDark ? 'mdi-weather-sunny' : 'mdi-weather-night' }}</v-icon>
+        <v-icon :color="iconColor">{{ isDark ? 'mdi-weather-sunny' : 'mdi-weather-night' }}</v-icon>
       </v-btn>
 
       <v-menu
@@ -47,6 +47,11 @@ export default {
     return {
       isDark: false,
     };
+  },
+  computed: {
+    iconColor() {
+      return this.isDark ? "white" : "black";
+    }
   },
   methods: {
     toggleTheme() {

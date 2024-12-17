@@ -8,6 +8,7 @@
           <AppBar />
         </div>
         <div class="content">
+          <UserTable/>
         </div>
       </div>
     </div>
@@ -18,12 +19,14 @@
 <script>
 import Menu from "./components/Menu/Menu.vue";
 import AppBar from "./components/AppBar/AppBar.vue";
+import UserTable from "./components/UserTable/UserTable.vue";
 
 export default {
   name: "App",
   components: {
     Menu,
     AppBar,
+    UserTable,
   },
 };
 </script>
