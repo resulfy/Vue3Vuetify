@@ -22,9 +22,6 @@
           <v-list-item prepend-icon="mdi-account" title="My Account" value="account"></v-list-item>
           <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"></v-list-item>
         </v-list>
-        <v-list-item class="hover-btn">
-          <v-btn :color="reverseColor" icon="mdi-chevron-right" variant="text" v-if="showHoverBtn"></v-btn>
-        </v-list-item>
       </v-navigation-drawer>
   </v-card>
 </template>

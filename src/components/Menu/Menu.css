@@ -44,21 +44,6 @@
   transition: background-color 0.5s ease;
 }
 
-.v-navigation-drawer--rail .hover-btn {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease-in-out;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-}
-
-.v-navigation-drawer--rail:hover .hover-btn {
-  opacity: 1;
-  pointer-events: auto;
-  color: black !important;
-}
-
 .v-navigation-drawer:not(.v-navigation-drawer--rail) .hover-btn {
   opacity: 0;
   pointer-events: none;
