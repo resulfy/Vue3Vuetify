@@ -113,7 +113,7 @@ export default {
         users.value = data.map((user) => ({
             id: user.id,
             name: user.name,
-            email: user.email,
+            email: user.email.toLowerCase(),
             address: `${user.address.street}, ${user.address.city}`,
           }));
           loadingUsers.value = false;
