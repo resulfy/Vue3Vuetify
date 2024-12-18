@@ -8,7 +8,7 @@
           <AppBar />
         </div>
         <div class="content">
-          <UserTable/>
+          <router-view></router-view>
         </div>
       </div>
     </div>
@@ -26,7 +26,6 @@ export default {
   components: {
     Menu,
     AppBar,
-    UserTable,
   },
 };
 </script>
