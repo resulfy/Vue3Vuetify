@@ -43,7 +43,7 @@
             <v-col cols="12">
               <v-text-field v-model="editedItem.email" label="E-mail"></v-text-field>
             </v-col>
-            <v-col cols="12">
+            <v-col class="bottom-col" cols="12">
               <v-text-field v-model="editedItem.address" label="Address"></v-text-field>
             </v-col>
           </v-row>

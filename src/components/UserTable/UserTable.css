@@ -13,3 +13,16 @@
 .v-pagination .v-theme--light {
   color: black;
 }
+
+.v-card-text{
+  padding-bottom: 0 !important;
+  margin-top: 16px;
+}
+
+.v-card-actions{
+  padding-bottom: 25px !important;
+}
+
+.v-dialog .v-card-text .bottom-col{
+  padding-bottom: 0 !important;
+}
