@@ -1,3 +1,31 @@
+<script>
+export default {
+  name: "CustomAppBar",
+  data() {
+    return {
+      isDark: false,
+    };
+  },
+  computed: {
+    iconColor() {
+      return this.isDark ? "white" : "black";
+    }
+  },
+  methods: {
+    toggleTheme() {
+      this.isDark = !this.isDark;
+      this.$vuetify.theme.global.name = this.isDark ? "dark" : "light";
+    },
+    logout() {
+      console.log("Log Out clicked");
+    },
+    settings() {
+      console.log("Settinga clicked");
+    }
+  },
+};
+</script>
+
 <template>
   <v-app>
       <v-app-bar elevation="5" class="app-bar">
@@ -39,34 +67,5 @@
     </v-app-bar>
   </v-app>
 </template>
-
-<script>
-export default {
-  name: "CustomAppBar",
-  data() {
-    return {
-      isDark: false,
-    };
-  },
-  computed: {
-    iconColor() {
-      return this.isDark ? "white" : "black";
-    }
-  },
-  methods: {
-    toggleTheme() {
-      this.isDark = !this.isDark;
-      this.$vuetify.theme.global.name = this.isDark ? "dark" : "light";
-    },
-    logout() {
-      console.log("Log Out clicked");
-    },
-    settings() {
-      console.log("Settinga clicked");
-    }
-  },
-};
-</script>
-
 
 <style src="./AppBar.css"></style>

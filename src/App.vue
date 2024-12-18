@@ -1,3 +1,17 @@
+<script>
+import Menu from "./components/Menu/Menu.vue";
+import AppBar from "./components/AppBar/AppBar.vue";
+import UserTable from "./components/UserTable/UserTable.vue";
+
+export default {
+  name: "App",
+  components: {
+    Menu,
+    AppBar,
+  },
+};
+</script>
+
 <template>
   <v-app>
     <v-main>
@@ -15,19 +29,5 @@
     </v-main>
   </v-app>
 </template>
-
-<script>
-import Menu from "./components/Menu/Menu.vue";
-import AppBar from "./components/AppBar/AppBar.vue";
-import UserTable from "./components/UserTable/UserTable.vue";
-
-export default {
-  name: "App",
-  components: {
-    Menu,
-    AppBar,
-  },
-};
-</script>
 
 <style src="./App.css"></style>

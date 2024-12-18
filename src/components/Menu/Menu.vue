@@ -1,3 +1,25 @@
+<script>
+import { computed } from 'vue';
+
+export default {
+  data() {
+    return {
+      drawer: true,
+      rail: true,
+      showHoverBtn: false,
+    };
+  },
+  computed: {
+    chevronColor(){
+      return this.$vuetify.theme.global.name === "dark" ? "white" : "black";
+    },
+    reverseColor(){
+      return this.$vuetify.theme.global.name === "white" ? "dark" : "black";
+    },
+  }
+};
+</script>
+
 <template>
   <v-card>
       <v-navigation-drawer v-model="drawer" elevation="5" :rail="rail" permanent @click="rail = false"
@@ -25,28 +47,6 @@
       </v-navigation-drawer>
   </v-card>
 </template>
-
-<script>
-import { computed } from 'vue';
-
-export default {
-  data() {
-    return {
-      drawer: true,
-      rail: true,
-      showHoverBtn: false,
-    };
-  },
-  computed: {
-    chevronColor(){
-      return this.$vuetify.theme.global.name === "dark" ? "white" : "black";
-    },
-    reverseColor(){
-      return this.$vuetify.theme.global.name === "white" ? "dark" : "black";
-    },
-  }
-};
-</script>
 
 
 <style src="./Menu.css"></style>
