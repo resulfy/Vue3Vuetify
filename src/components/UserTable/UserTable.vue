@@ -2,6 +2,9 @@
   <v-data-table
     :headers="headers"
     :items="users"
+    :footer-props="{
+      showFirstLastPage: true,
+    }"
     :loading="loadingUsers"
     :sort-by="[{ key: 'id', order: 'asc' }]"
     loading-text="Loading users... Please wait"

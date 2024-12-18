@@ -9,3 +9,7 @@
 .v-card{
     align-items: center;
 }
+
+.v-pagination .v-theme--light {
+  color: black;
+}
