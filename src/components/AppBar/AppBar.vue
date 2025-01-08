@@ -11,7 +11,7 @@ export default {
       return this.isDark ? "white" : "black";
     }
   },
-  methods: {
+methods: {
     toggleTheme() {
       this.isDark = !this.isDark;
       this.$vuetify.theme.global.name = this.isDark ? "dark" : "light";
